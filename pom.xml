@@ -20,17 +20,54 @@
 	</properties>
 	
 	<distributionManagement>
-	<repository>
+    <repository>
         <id>central</id>
         <name>INBASDPC08424-releases</name>
-        <url>http://localhost:7081/artifactory/AirBus</url>
-        </repository>
-        <snapshotRepository>
+        <url>http://172.19.83.73:7081/artifactory/AirBus</url>
+    </repository>
+    <snapshotRepository>
         <id>snapshots</id>
         <name>INBASDPC08424-snapshots</name>
-        <url>http://localhost:7081/artifactory/AirBus</url>
-        </snapshotRepository>
-	</distributionManagement>
+        <url>http://172.19.83.73:7081/artifactory/AirBus</url>
+    </snapshotRepository>
+</distributionManagement>	
+	
+
+<repositories>
+    <repository>
+        <id>central</id>
+        <url>http://172.19.83.73:7081/artifactory/libs-release</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+    <repository>
+        <id>snapshots</id>
+        <url>http://172.19.83.73:7081/artifactory/libs-snapshot</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </repository>
+</repositories>
+<pluginRepositories>
+    <pluginRepository>
+        <id>central</id>
+        <url>http://172.19.83.73:7081/artifactory/plugins-release</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+        <id>snapshots</id>
+        <url>http://172.19.83.73:7081/artifactory/plugins-snapshot</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </pluginRepository>
+</pluginRepositories>
+</settings>
+
+
 
 	<dependencies>
 		<!-- Spring -->
