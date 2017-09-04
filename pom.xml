@@ -319,7 +319,6 @@
 		</properties>
 	</profile>
 		<!-- The Configuration of the integration-test profile -->
-		<!-- The Configuration of the integration-test profile -->
 	<profile>
 		<id>integration-test</id>
 		<properties>
